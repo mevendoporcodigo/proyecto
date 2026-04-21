@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alebrije | Crematorio y Memoriales para tu Guía Espiritual</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'alebrije-blue': '#1e5f8e',
+                        'alebrije-dark': '#0f3a5c',
+                        'alebrije-teal': '#2a9d8f',
+                        'alebrije-gold': '#d4a373',
+                        'alebrije-cream': '#f8f5f2',
+                        'alebrije-gray': '#6c757d'
+                    },
+                    fontFamily: {
+                        'serif': ['Playfair Display', 'serif'],
+                        'sans': ['Lato', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-alebrije-cream text-gray-800 antialiased">
+
+    <!-- Navigation -->
+    <nav id="navbar" class="fixed w-full z-50 transition-all duration-300 bg-transparent py-4">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-3">
+                    <div class="w-12 h-12 bg-alebrije-blue rounded-full flex items-center justify-center text-white">
+                        <i class="fas fa-dove text-xl"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-2xl font-bold text-alebrije-dark tracking-wide">ALEBRIJE</h1>
+                        <p class="text-xs text-alebrije-teal tracking-widest uppercase">Crematorio & Memoriales</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="text-alebrije-dark hover:text-alebrije-teal transition-colors font-medium">Inicio</a>
+                    <a href="#nosotros" class="text-alebrije-dark hover:text-alebrije-teal transition-colors font-medium">Nosotros</a>
+                    <a href="#proceso" class="text-alebrije-dark hover:text-alebrije-teal transition-colors font-medium">Proceso</a>
+                    <a href="#productos" class="text-alebrije-dark hover:text-alebrije-teal transition-colors font-medium">Presentaciones</a>
+                    <a href="#adicionales" class="text-alebrije-dark hover:text-alebrije-teal transition-colors font-medium">Adicionales</a>
+                    <a href="#contacto" class="bg-alebrije-blue text-white px-6 py-2 rounded-full hover:bg-alebrije-dark transition-all shadow-lg hover:shadow-xl">
+                        Contactar
+                    </a>
+                </div>
+
+                <button id="mobile-menu-btn" class="md:hidden text-alebrije-dark text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md absolute w-full border-t border-gray-100">
+            <div class="px-4 py-6 space-y-4 flex flex-col">
+                <a href="#inicio" class="text-alebrije-dark hover:text-alebrije-teal font-medium py-2 border-b border-gray-100">Inicio</a>
+                <a href="#nosotros" class="text-alebrije-dark hover:text-alebrije-teal font-medium py-2 border-b border-gray-100">Nosotros</a>
+                <a href="#proceso" class="text-alebrije-dark hover:text-alebrije-teal font-medium py-2 border-b border-gray-100">Proceso</a>
+                <a href="#productos" class="text-alebrije-dark hover:text-alebrije-teal font-medium py-2 border-b border-gray-100">Presentaciones</a>
+                <a href="#adicionales" class="text-alebrije-dark hover:text-alebrije-teal font-medium py-2 border-b border-gray-100">Adicionales</a>
+                <a href="#contacto" class="bg-alebrije-blue text-white px-6 py-3 rounded-full text-center mt-4">Contactar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-alebrije-dark to-alebrije-teal"></div>
+        <div class="absolute inset-0 opacity-20">
+            <div class="absolute top-20 left-20 w-72 h-72 bg-white rounded-full mix-blend-overlay filter blur-3xl gentle-pulse"></div>
+            <div class="absolute bottom-20 right-20 w-96 h-96 bg-alebrije-teal rounded-full mix-blend-overlay filter blur-3xl gentle-pulse" style="animation-delay: 1.5s"></div>
+        </div>
+        
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="fade-in">
+                <div class="inline-block mb-6">
+                    <span class="bg-white/10 backdrop-blur-sm text-alebrije-gold px-4 py-2 rounded-full text-sm tracking-widest uppercase border border-alebrije-gold/30">
+                        Crematorio y Memoriales
+                    </span>
+                </div>
+                <h1 class="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+                    Tu Guía Espiritual <br>
+                    <span class="text-alebrije-teal italic">Vive para Siempre</span>
+                </h1>
+                <p class="text-xl md:text-2xl text-gray-300 max-w-3xl mx-auto mb-10 font-light leading-relaxed">
+                    Honramos y recordamos a tus seres más amados con respeto y dignidad. 
+                    Esculturas realistas en 3D que preservan su esencia y cenizas.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#productos" class="bg-alebrije-teal text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-alebrije-blue transition-all shadow-lg hover:shadow-alebrije-teal/50 transform hover:scale-105">
+                        Ver Presentaciones
+                    </a>
+                    <a href="#nosotros" class="bg-transparent border-2 border-white/30 text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white/10 transition-all">
+                        Conocer Más
+                    </a>
+                </div>
+            </div>
+            
+            <div class="mt-16 fade-in" style="animation-delay: 0.3s">
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto">
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-3 backdrop-blur-sm">
+                            <i class="fas fa-heart text-2xl text-alebrije-gold"></i>
+                        </div>
+                        <p class="text-white/80 text-sm">Honestidad</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-3 backdrop-blur-sm">
+                            <i class="fas fa-handshake text-2xl text-alebrije-gold"></i>
+                        </div>
+                        <p class="text-white/80 text-sm">Respeto</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-3 backdrop-blur-sm">
+                            <i class="fas fa-hands-holding-circle text-2xl text-alebrije-gold"></i>
+                        </div>
+                        <p class="text-white/80 text-sm">Solidaridad</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-16 h-16 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-3 backdrop-blur-sm">
+                            <i class="fas fa-shield-halved text-2xl text-alebrije-gold"></i>
+                        </div>
+                        <p class="text-white/80 text-sm">Responsabilidad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="absolute bottom-10 left-1/2 transform -translate-x-1/2 animate-bounce">
+            <a href="#nosotros" class="text-white/50 hover:text-white transition-colors">
+                <i class="fas fa-chevron-down text-3xl"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="nosotros" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="fade-in">
+                    <span class="text-alebrije-teal font-semibold tracking-widest uppercase text-sm mb-2 block">Quienes Somos</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-alebrije-dark mb-6 leading-tight">
+                        Pioneros en <span class="italic text-alebrije-blue">Esculturas Conmemorativas</span>
+                    </h2>
+                    <div class="space-y-4 text-gray-600 leading-relaxed text-lg">
+                        <p>
+                            Somos una empresa ecuatoriana comprometida en ofrecer un exclusivo servicio para el último adiós de nuestro amado amigo. En Alebrije honramos y recordamos a estos seres con respeto y dignidad.
+                        </p>
+                        <p>
+                            Nos encargamos de sus restos con el mismo amor y cuidado que nos brindaron durante su vida, permitiendo que su memoria perdure para siempre a partir de la combinación del <strong>arte y la impresión 3D</strong>.
+                        </p>
+                        <p class="text-alebrije-dark font-medium border-l-4 border-alebrije-teal pl-4 italic">
+                            "En Alebrije somos pioneros en crear esculturas que conmemoran la vida y que acompañan el proceso de sanación por la pérdida de una mascota."
+                        </p>
+                    </div>
+                    
+                    <div class="mt-8 grid grid-cols-2 gap-6">
+                        <div class="bg-alebrije-cream p-4 rounded-lg">
+                            <h4 class="font-bold text-alebrije-dark text-3xl mb-1">100%</h4>
+                            <p class="text-sm text-gray-600">Personalizado</p>
+                        </div>
+                        <div class="bg-alebrije-cream p-4 rounded-lg">
+                            <h4 class="font-bold text-alebrije-dark text-3xl mb-1">3-4</h4>
+                            <p class="text-sm text-gray-600">Días de entrega</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in relative">
+                    <div class="relative rounded-2xl overflow-hidden shadow-2xl">
+                        <div class="aspect-[4/5] bg-gradient-to-br from-alebrije-blue to-alebrije-teal flex items-center justify-center">
+                            <div class="text-center text-white p-8">
+                                <i class="fas fa-paw text-6xl mb-4 opacity-50"></i>
+                                <p class="text-lg italic">"Tras afrontar la pérdida de mis fieles compañeros, busqué encapsular su esencia. Gracias a la tecnología 3D y mi amor por el arte, nació Alebrije."</p>
+                                <p class="mt-4 font-semibold">— Fundadora</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="absolute -bottom-6 -left-6 w-32 h-32 bg-alebrije-gold/20 rounded-full -z-10"></div>
+                    <div class="absolute -top-6 -right-6 w-24 h-24 bg-alebrije-teal/20 rounded-full -z-10"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alebrijes Legend -->
+    <section class="py-20 bg-alebrije-cream">
+        <div class="max-w-5xl mx-auto px-4 text-center fade-in">
+            <i class="fas fa-dragon text-5xl text-alebrije-teal mb-6"></i>
+            <h2 class="text-4xl md:text-5xl font-bold text-alebrije-dark mb-8">
+                ¿Has escuchado sobre los <span class="italic text-alebrije-blue">alebrijes</span>?
+            </h2>
+            <div class="prose prose-lg mx-auto text-gray-600 leading-relaxed">
+                <p class="text-xl mb-6">
+                    Los alebrijes nacen del mundo de los sueños y la imaginación, como seres llenos de color, fuerza y espíritu. En la tradición, representan guías espirituales que protegen, acompañan y dan luz en los caminos invisibles de la vida.
+                </p>
+                <p class="text-lg italic text-alebrije-dark bg-white p-6 rounded-xl shadow-sm border border-alebrije-teal/20">
+                    "Cuando nuestras mascotas parten, su amor no desaparece. Su esencia se transforma. Se dice que su espíritu adopta una nueva forma, libre y luminosa, convirtiéndose en un alebrije que nos acompaña desde otro plano."
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="proceso" class="py-24 bg-white relative overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-alebrije-teal font-semibold tracking-widest uppercase text-sm">Nuestro Proceso</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-alebrije-dark mt-2">
+                    Te guiaremos en este <span class="italic">proceso</span>
+                </h2>
+            </div>
+
+            <div class="relative">
+                <!-- Timeline Line (Desktop) -->
+                <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gradient-to-b from-alebrije-blue to-alebrije-teal"></div>
+
+                <!-- Steps -->
+                <div class="space-y-12 md:space-y-24">
+                    <!-- Step 1 -->
+                    <div class="relative fade-in">
+                        <div class="md:flex items-center justify-between">
+                            <div class="md:w-5/12 md:text-right pr-8">
+                                <div class="bg-alebrije-cream p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                                    <div class="w-12 h-12 bg-alebrije-blue rounded-full flex items-center justify-center text-white mb-4 md:ml-auto">
+                                        <i class="fas fa-hand-holding-heart"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-alebrije-dark mb-2">1. Recepción</h3>
+                                    <p class="text-gray-600">Una vez que decidas confiar en nosotros, nos encargamos de recoger a tu mascota en tu domicilio o veterinaria con el respeto que un ser amado merece.</p>
+                                </div>
+                            </div>
+                            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-alebrije-teal rounded-full border-4 border-white shadow-lg"></div>
+                            <div class="md:w-5/12 pl-8 hidden md:block"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 2 -->
+                    <div class="relative fade-in">
+                        <div class="md:flex items-center justify-between">
+                            <div class="md:w-5/12 pr-8 hidden md:block"></div>
+                            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-alebrije-teal rounded-full border-4 border-white shadow-lg"></div>
+                            <div class="md:w-5/12 md:pl-8">
+                                <div class="bg-alebrije-cream p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                                    <div class="w-12 h-12 bg-alebrije-teal rounded-full flex items-center justify-center text-white mb-4">
+                                        <i class="fas fa-fire-flame-curved"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-alebrije-dark mb-2">2. Transición</h3>
+                                    <p class="text-gray-600">Transformamos el amor a cenizas. Contamos con un horno especializado marca CALTEC que cumple y respeta las normativas medioambientales.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 3 -->
+                    <div class="relative fade-in">
+                        <div class="md:flex items-center justify-between">
+                            <div class="md:w-5/12 md:text-right pr-8">
+                                <div class="bg-alebrije-cream p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                                    <div class="w-12 h-12 bg-alebrije-gold rounded-full flex items-center justify-center text-white mb-4 md:ml-auto">
+                                        <i class="fas fa-link"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-alebrije-dark mb-2">3. Lazos que Unen</h3>
+                                    <p class="text-gray-600">Una urna personalizada con la forma de tu mascota acogerá la esencia de él, así estará su presencia y amor en tu hogar.</p>
+                                </div>
+                            </div>
+                            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-alebrije-gold rounded-full border-4 border-white shadow-lg"></div>
+                            <div class="md:w-5/12 pl-8 hidden md:block"></div>
+                        </div>
+                    </div>
+
+                    <!-- Step 4 -->
+                    <div class="relative fade-in">
+                        <div class="md:flex items-center justify-between">
+                            <div class="md:w-5/12 pr-8 hidden md:block"></div>
+                            <div class="hidden md:block absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-alebrije-blue rounded-full border-4 border-white shadow-lg"></div>
+                            <div class="md:w-5/12 md:pl-8">
+                                <div class="bg-alebrije-cream p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow">
+                                    <div class="w-12 h-12 bg-alebrije-blue rounded-full flex items-center justify-center text-white mb-4">
+                                        <i class="fas fa-house-chimney"></i>
+                                    </div>
+                                    <h3 class="text-2xl font-bold text-alebrije-dark mb-2">4. Reencuentro</h3>
+                                    <p class="text-gray-600">Te entregaremos a tu ser amado en su nueva forma. Volverá a reunirse contigo y tu familia en su hogar, acompañándote siempre.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technology Section -->
+    <section class="py-20 bg-alebrije-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="fade-in text-center p-6">
+                    <div class="w-20 h-20 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-cube text-3xl text-alebrije-teal"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Moldeado 3D</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Realizado en software especializado con el detalle y realismo que sólo un escultor digital avanzado puede lograr. Cada diseño es único en el mundo.
+                    </p>
+                </div>
+                <div class="fade-in text-center p-6" style="animation-delay: 0.2s">
+                    <div class="w-20 h-20 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-print text-3xl text-alebrije-teal"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Impresión 3D</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Capa por capa se materializa el diseño. Imprimimos en bioplástico PLA, muy resistente y que permite acabados de alta calidad.
+                    </p>
+                </div>
+                <div class="fade-in text-center p-6" style="animation-delay: 0.4s">
+                    <div class="w-20 h-20 mx-auto bg-white/10 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-paint-brush text-3xl text-alebrije-teal"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Pintura Artesanal</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        La escultura toma vida y realismo con el inigualable toque artístico de pintar a mano cada pieza. Recreamos a pinceladas cada detalle.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section id="productos" class="py-24 bg-alebrije-cream">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-alebrije-teal font-semibold tracking-widest uppercase text-sm">Nuestras Presentaciones</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-alebrije-dark mt-2 mb-4">
+                    Memorias que <span class="italic">Perduran</span>
+                </h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">
+                    Cada presentación incluye certificado de cremación, vela aromática, cuaderno de duelo, stickers de huella digital y porta retrato.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Pet Escultura -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg fade-in group cursor-pointer" onclick="toggleDetail('escultura')">
+                    <div class="h-64 bg-gradient-to-br from-gray-100 to-gray-200 flex items-center justify-center relative overflow-hidden">
+                        <i class="fas fa-dog text-8xl text-alebrije-blue/20 group-hover:scale-110 transition-transform duration-500"></i>
+                        <div class="absolute bottom-4 right-4 bg-alebrije-blue text-white px-3 py-1 rounded-full text-sm font-semibold">
+                            Popular
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-alebrije-dark mb-2">Pet Escultura</h3>
+                        <p class="text-gray-600 text-sm mb-4">Escultura completa personalizada con alas imantadas que brillan en la oscuridad.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-alebrije-teal font-semibold">Ver detalles</span>
+                            <i class="fas fa-chevron-down text-alebrije-teal transition-transform" id="icon-escultura"></i>
+                        </div>
+                    </div>
+                    <div id="detail-escultura" class="product-detail px-6 bg-gray-50">
+                        <div class="pb-6 space-y-2 text-sm text-gray-600">
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Pintado a mano</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Collar personalizado</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Alas imantadas (brillan en oscuridad)</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Ceniza en interior</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Tapa inferior enroscable</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-ruler-vertical text-alebrije-blue"></i> 20cm de altura</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Urna Pet (Jarron) -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg fade-in group cursor-pointer" onclick="toggleDetail('urna-jarron')" style="animation-delay: 0.1s">
+                    <div class="h-64 bg-gradient-to-br from-blue-50 to-teal-50 flex items-center justify-center">
+                        <i class="fas fa-jar text-8xl text-alebrije-teal/20 group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-alebrije-dark mb-2">Urna Pet Cerámica</h3>
+                        <p class="text-gray-600 text-sm mb-4">Elegante urna de cerámica con rostro de tu mascota y tapa personalizada.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-alebrije-teal font-semibold">Ver detalles</span>
+                            <i class="fas fa-chevron-down text-alebrije-teal transition-transform" id="icon-urna-jarron"></i>
+                        </div>
+                    </div>
+                    <div id="detail-urna-jarron" class="product-detail px-6 bg-gray-50">
+                        <div class="pb-6 space-y-2 text-sm text-gray-600">
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Pintado a mano</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Tapa personalizada con nombre</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Collar con placa identificadora</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Ceniza en interior</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Maceta Pet -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg fade-in group cursor-pointer" onclick="toggleDetail('maceta')" style="animation-delay: 0.2s">
+                    <div class="h-64 bg-gradient-to-br from-green-50 to-emerald-50 flex items-center justify-center">
+                        <i class="fas fa-seedling text-8xl text-green-500/20 group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-alebrije-dark mb-2">Maceta Pet</h3>
+                        <p class="text-gray-600 text-sm mb-4">Cabeza de tu mascota convertida en maceta con separación especial para proteger la raíz.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-alebrije-teal font-semibold">Ver detalles</span>
+                            <i class="fas fa-chevron-down text-alebrije-teal transition-transform" id="icon-maceta"></i>
+                        </div>
+                    </div>
+                    <div id="detail-maceta" class="product-detail px-6 bg-gray-50">
+                        <div class="pb-6 space-y-2 text-sm text-gray-600">
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Pintado a mano</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Cubierta en resina (exterior/interior)</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Separación tierra/ceniza</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Resistente al agua</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-leaf text-green-600"></i> Catálogo de plantas disponible</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pet Retrato -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg fade-in group cursor-pointer" onclick="toggleDetail('retrato')" style="animation-delay: 0.3s">
+                    <div class="h-64 bg-gradient-to-br from-amber-50 to-orange-50 flex items-center justify-center">
+                        <i class="fas fa-image text-8xl text-amber-600/20 group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-alebrije-dark mb-2">Pet Retrato 3D</h3>
+                        <p class="text-gray-600 text-sm mb-4">Rostro en relieve enmarcado en madera. Una obra de arte tridimensional.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-alebrije-teal font-semibold">Ver detalles</span>
+                            <i class="fas fa-chevron-down text-alebrije-teal transition-transform" id="icon-retrato"></i>
+                        </div>
+                    </div>
+                    <div id="detail-retrato" class="product-detail px-6 bg-gray-50">
+                        <div class="pb-6 space-y-2 text-sm text-gray-600">
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Impreso en bioplástico PLA</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Pintado a mano</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Marco de madera personalizado</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Ceniza en interior de la cabeza</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Urna Pet (Madera) -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg fade-in group cursor-pointer" onclick="toggleDetail('urna-madera')" style="animation-delay: 0.4s">
+                    <div class="h-64 bg-gradient-to-br from-stone-100 to-stone-200 flex items-center justify-center">
+                        <i class="fas fa-box-open text-8xl text-stone-500/20 group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-alebrije-dark mb-2">Urna de Madera</h3>
+                        <p class="text-gray-600 text-sm mb-4">Elegante caja de madera con escultura de tu mascota en la tapa.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-alebrije-teal font-semibold">Ver detalles</span>
+                            <i class="fas fa-chevron-down text-alebrije-teal transition-transform" id="icon-urna-madera"></i>
+                        </div>
+                    </div>
+                    <div id="detail-urna-madera" class="product-detail px-6 bg-gray-50">
+                        <div class="pb-6 space-y-2 text-sm text-gray-600">
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Urna de madera de calidad</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Escultura pintada a mano</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Alas imantadas brillantes</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Collar personalizado</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Busto -->
+                <div class="card-hover bg-white rounded-2xl overflow-hidden shadow-lg fade-in group cursor-pointer" onclick="toggleDetail('busto')" style="animation-delay: 0.5s">
+                    <div class="h-64 bg-gradient-to-br from-purple-50 to-indigo-50 flex items-center justify-center">
+                        <i class="fas fa-gem text-8xl text-purple-500/20 group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-alebrije-dark mb-2">Busto Memorial</h3>
+                        <p class="text-gray-600 text-sm mb-4">Busto realista sobre base de madera. Presencia majestuosa y conmovedora.</p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-alebrije-teal font-semibold">Ver detalles</span>
+                            <i class="fas fa-chevron-down text-alebrije-teal transition-transform" id="icon-busto"></i>
+                        </div>
+                    </div>
+                    <div id="detail-busto" class="product-detail px-6 bg-gray-50">
+                        <div class="pb-6 space-y-2 text-sm text-gray-600">
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Pintado a mano</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Base de madera elegante</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Collar personalizado</div>
+                            <div class="flex items-center gap-2"><i class="fas fa-check text-alebrije-teal"></i> Ceniza en interior de escultura</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Inclusions -->
+            <div class="mt-16 bg-white rounded-2xl p-8 shadow-lg fade-in">
+                <h3 class="text-2xl font-bold text-alebrije-dark mb-6 text-center">Todas las presentaciones incluyen:</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                    <div class="text-center">
+                        <div class="w-14 h-14 mx-auto bg-alebrije-cream rounded-full flex items-center justify-center mb-2 text-alebrije-blue">
+                            <i class="fas fa-image text-xl"></i>
+                        </div>
+                        <p class="text-sm text-gray-600">Porta retrato con foto</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 mx-auto bg-alebrije-cream rounded-full flex items-center justify-center mb-2 text-alebrije-blue">
+                            <i class="fas fa-certificate text-xl"></i>
+                        </div>
+                        <p class="text-sm text-gray-600">Certificado de cremación</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 mx-auto bg-alebrije-cream rounded-full flex items-center justify-center mb-2 text-alebrije-blue">
+                            <i class="fas fa-fire text-xl"></i>
+                        </div>
+                        <p class="text-sm text-gray-600">Vela aromática</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 mx-auto bg-alebrije-cream rounded-full flex items-center justify-center mb-2 text-alebrije-blue">
+                            <i class="fas fa-book-open text-xl"></i>
+                        </div>
+                        <p class="text-sm text-gray-600">Cuaderno "Duelo de mi mascota"</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 mx-auto bg-alebrije-cream rounded-full flex items-center justify-center mb-2 text-alebrije-blue">
+                            <i class="fas fa-paw text-xl"></i>
+                        </div>
+                        <p class="text-sm text-gray-600">Stickers huella digital</p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-14 h-14 mx-auto bg-alebrije-cream rounded-full flex items-center justify-center mb-2 text-alebrije-blue">
+                            <i class="fas fa-heart text-xl"></i>
+                        </div>
+                        <p class="text-sm text-gray-600">Acompañamiento en el duelo</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Additional Presentations -->
+    <section id="adicionales" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16 fade-in">
+                <span class="text-alebrije-teal font-semibold tracking-widest uppercase text-sm">Complementos</span>
+                <h2 class="text-4xl md:text-5xl font-bold text-alebrije-dark mt-2">
+                    Presentaciones <span class="italic">Adicionales</span>
+                </h2>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Llavero -->
+                <div class="bg-alebrije-cream rounded-xl p-6 text-center card-hover fade-in">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-md">
+                        <i class="fas fa-key text-2xl text-alebrije-blue"></i>
+                    </div>
+                    <h4 class="font-bold text-alebrije-dark mb-2">Pet Llavero</h4>
+                    <p class="text-sm text-gray-600 mb-3">Miniatura de tu mascota para llevar contigo</p>
+                    <span class="text-alebrije-teal font-bold">USD 20.00</span>
+                </div>
+
+                <!-- Colgante -->
+                <div class="bg-alebrije-cream rounded-xl p-6 text-center card-hover fade-in" style="animation-delay: 0.1s">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-md">
+                        <i class="fas fa-gem text-2xl text-alebrije-blue"></i>
+                    </div>
+                    <h4 class="font-bold text-alebrije-dark mb-2">Colgante Pet</h4>
+                    <p class="text-sm text-gray-600 mb-3">Dije con miniatura de tu mascota</p>
+                    <span class="text-alebrije-teal font-bold">USD 20.00</span>
+                </div>
+
+                <!-- Huella Arcilla -->
+                <div class="bg-alebrije-cream rounded-xl p-6 text-center card-hover fade-in" style="animation-delay: 0.2s">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-md">
+                        <i class="fas fa-fingerprint text-2xl text-alebrije-blue"></i>
+                    </div>
+                    <h4 class="font-bold text-alebrije-dark mb-2">Huella en Arcilla</h4>
+                    <p class="text-sm text-gray-600 mb-3">Impresión real en arcilla decorada</p>
+                    <span class="text-alebrije-teal font-bold">USD 15.00</span>
+                </div>
+
+                <!-- Retrato 3D -->
+                <div class="bg-alebrije-cream rounded-xl p-6 text-center card-hover fade-in" style="animation-delay: 0.3s">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-md">
+                        <i class="fas fa-portrait text-2xl text-alebrije-blue"></i>
+                    </div>
+                    <h4 class="font-bold text-alebrije-dark mb-2">Retrato 3D Adicional</h4>
+                    <p class="text-sm text-gray-600 mb-3">Segundo retrato enmarcado</p>
+                    <span class="text-alebrije-teal font-bold">USD 30.00</span>
+                </div>
+
+                <!-- Porta Retrato y Huella -->
+                <div class="bg-alebrije-cream rounded-xl p-6 text-center card-hover fade-in" style="animation-delay: 0.4s">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-md">
+                        <i class="fas fa-images text-2xl text-alebrije-blue"></i>
+                    </div>
+                    <h4 class="font-bold text-alebrije-dark mb-2">Porta Retrato + Huella</h4>
+                    <p class="text-sm text-gray-600 mb-3">Marco doble con foto y huella</p>
+                    <span class="text-alebrije-teal font-bold">USD 25.00</span>
+                </div>
+
+                <!-- Maceta Adicional -->
+                <div class="bg-alebrije-cream rounded-xl p-6 text-center card-hover fade-in" style="animation-delay: 0.5s">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-md">
+                        <i class="fas fa-seedling text-2xl text-alebrije-blue"></i>
+                    </div>
+                    <h4 class="font-bold text-alebrije-dark mb-2">Maceta Pet Adicional</h4>
+                    <p class="text-sm text-gray-600 mb-3">Segunda maceta con planta</p>
+                    <span class="text-alebrije-teal font-bold">USD 35.00</span>
+                </div>
+
+                <!-- Cuadros -->
+                <div class="bg-alebrije-cream rounded-xl p-6 text-center card-hover fade-in" style="animation-delay: 0.6s">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-md">
+                        <i class="fas fa-paint-brush text-2xl text-alebrije-blue"></i>
+                    </div>
+                    <h4 class="font-bold text-alebrije-dark mb-2">Cuadros Pintados a Mano</h4>
+                    <p class="text-sm text-gray-600 mb-3">Óleo personalizado de tu mascota</p>
+                    <span class="text-alebrije-teal font-bold">Consultar</span>
+                </div>
+
+                <!-- Dijes Cenizarios -->
+                <div class="bg-alebrije-cream rounded-xl p-6 text-center card-hover fade-in" style="animation-delay: 0.7s">
+                    <div class="w-16 h-16 mx-auto bg-white rounded-full flex items-center justify-center mb-4 shadow-md">
+                        <i class="fas fa-heart text-2xl text-alebrije-blue"></i>
+                    </div>
+                    <h4 class="font-bold text-alebrije-dark mb-2">Dijes Cenizarios</h4>
+                    <p class="text-sm text-gray-600 mb-3">Joyería en acero quirúrgico con ceniza</p>
+                    <span class="text-alebrije-teal font-bold">Consultar catálogo</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Other Conservation Methods -->
+    <section class="py-20 bg-alebrije-dark text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12 fade-in">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4">Otras Formas de <span class="italic text-alebrije-teal">Conservación</span></h2>
+                <p class="text-gray-300">Alternativas para honrar la memoria de tu compañero</p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 fade-in">
+                    <div class="w-14 h-14 bg-alebrije-teal/20 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-bone text-2xl text-alebrije-teal"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Osteología y Osteotecnia</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Proceso cuidadoso que permite conservar los restos óseos de manera limpia, digna y respetuosa. Es una forma de preservar la memoria desde la calma, honrando la historia y el vínculo que permanece más allá del tiempo.
+                    </p>
+                </div>
+                
+                <div class="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 fade-in" style="animation-delay: 0.2s">
+                    <div class="w-14 h-14 bg-alebrije-gold/20 rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-feather text-2xl text-alebrije-gold"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-3">Embalsamamiento o Taxidermia</h3>
+                    <p class="text-gray-300 leading-relaxed">
+                        Proceso cuidadoso y respetuoso que permite conservar la presencia de un ser especial de manera serena y digna. Más que una técnica, es una forma de acompañar el recuerdo y mantener viva la conexión desde el amor.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Customization Note -->
+    <section class="py-16 bg-alebrije-teal/10">
+        <div class="max-w-4xl mx-auto px-4 text-center fade-in">
+            <i class="fas fa-wand-magic-sparkles text-4xl text-alebrije-teal mb-4"></i>
+            <h3 class="text-2xl md:text-3xl font-bold text-alebrije-dark mb-4">100% Personalizado</h3>
+            <p class="text-gray-700 text-lg leading-relaxed">
+                Tienes absoluta libertad para elegir elementos, poses, accesorios o colores. Ningún memorial es igual a otro, lo que los hace únicos así como lo fue tu amado amigo. Durante todo el proceso estaremos en contacto. ¡Siempre es muy útil que nos hables de tu mascota!
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-16 items-center">
+                <div class="fade-in">
+                    <span class="text-alebrije-teal font-semibold tracking-widest uppercase text-sm">Contacto</span>
+                    <h2 class="text-4xl md:text-5xl font-bold text-alebrije-dark mt-2 mb-6">
+                        Estamos aquí para <span class="italic">acompañarte</span>
+                    </h2>
+                    <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        Perder un ser querido no es fácil. Estamos aquí para acompañarte en este proceso de transición con todo el amor y respeto que tu amigo merece.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-alebrije-cream rounded-full flex items-center justify-center text-alebrije-blue flex-shrink-0">
+                                <i class="fas fa-phone text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-alebrije-dark">Teléfono / WhatsApp</h4>
+                                <p class="text-gray-600 text-lg">099 466 1661</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-alebrije-cream rounded-full flex items-center justify-center text-alebrije-blue flex-shrink-0">
+                                <i class="fab fa-instagram text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-alebrije-dark">Instagram</h4>
+                                <p class="text-gray-600">@alebrije_crematorio</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="w-12 h-12 bg-alebrije-cream rounded-full flex items-center justify-center text-alebrije-blue flex-shrink-0">
+                                <i class="fas fa-clock text-lg"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-alebrije-dark">Tiempo de Entrega</h4>
+                                <p class="text-gray-600">3 a 4 días laborables (trabajo completamente personalizado)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-8 p-6 bg-alebrije-cream rounded-xl border-l-4 border-alebrije-teal">
+                        <p class="text-alebrije-dark italic font-medium">
+                            "Nuestras mascotas no ingresan a nuestra vida por casualidad, ellos nos eligieron como su familia para cuidarnos y enseñarnos, sin duda son nuestros auténticos guías espirituales."
+                        </p>
+                    </div>
+                </div>
+
+                <div class="fade-in bg-alebrije-dark rounded-2xl p-8 md:p-12 text-white shadow-2xl">
+                    <h3 class="text-2xl font-bold mb-6">Envíanos un mensaje</h3>
+                    <form id="contactForm" class="space-y-4" onsubmit="handleSubmit(event)">
+                        <div>
+                            <label class="block text-sm mb-2 text-gray-300">Nombre</label>
+                            <input type="text" required class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-alebrije-teal transition-colors" placeholder="Tu nombre">
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-2 text-gray-300">Teléfono</label>
+                            <input type="tel" required class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-alebrije-teal transition-colors" placeholder="099 000 0000">
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-2 text-gray-300">Tipo de Mascota</label>
+                            <select class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white focus:outline-none focus:border-alebrije-teal transition-colors">
+                                <option value="" class="text-gray-800">Seleccionar...</option>
+                                <option value="perro" class="text-gray-800">Perro</option>
+                                <option value="gato" class="text-gray-800">Gato</option>
+                                <option value="otro" class="text-gray-800">Otro</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="block text-sm mb-2 text-gray-300">Mensaje</label>
+                            <textarea rows="4" class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-gray-400 focus:outline-none focus:border-alebrije-teal transition-colors" placeholder="Cuéntanos sobre tu mascota..."></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-alebrije-teal hover:bg-alebrije-blue text-white font-bold py-4 rounded-lg transition-all transform hover:scale-[1.02] shadow-lg">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-alebrije-dark text-white py-12 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 items-center">
+                <div class="text-center md:text-left">
+                    <div class="flex items-center justify-center md:justify-start space-x-3 mb-4">
+                        <div class="w-10 h-10 bg-alebrije-teal rounded-full flex items-center justify-center">
+                            <i class="fas fa-dove"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-lg">ALEBRIJE</h4>
+                            <p class="text-xs text-gray-400">Crematorio y Memoriales</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-400 text-sm">Ecuador</p>
+                </div>
+                
+                <div class="text-center">
+                    <p class="text-gray-400 text-sm mb-2">Síguenos en redes sociales</p>
+                    <div class="flex justify-center space-x-4">
+                        <a href="https://instagram.com/alebrije_crematorio" target="_blank" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-alebrije-teal transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-alebrije-teal transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-alebrije-teal transition-colors">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="text-center md:text-right">
+                    <p class="text-gray-400 text-sm">© 2026 Alebrije Crematorio.</p>
+                    <p class="text-gray-500 text-xs mt-1">Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="fixed inset-0 bg-black/50 backdrop-blur-sm z-50 hidden items-center justify-center p-4">
+        <div class="bg-white rounded-2xl p-8 max-w-md w-full text-center shadow-2xl transform scale-95 transition-transform" id="modalContent">
+            <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                <i class="fas fa-check text-2xl text-green-600"></i>
+            </div>
+            <h3 class="text-2xl font-bold text-alebrije-dark mb-2">¡Mensaje Enviado!</h3>
+            <p class="text-gray-600 mb-6">Gracias por contactarnos. Nos pondremos en contacto contigo muy pronto para acompañarte en este proceso.</p>
+            <button onclick="closeModal()" class="bg-alebrije-blue text-white px-8 py-3 rounded-full hover:bg-alebrije-dark transition-colors w-full">
+                Cerrar
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
